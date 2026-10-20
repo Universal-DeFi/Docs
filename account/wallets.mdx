@@ -1,0 +1,40 @@
+---
+title: "Wallets"
+description: "Register and verify the wallets that receive your tokens."
+icon: "wallet"
+---
+
+Tokens are minted to, and redeemed from, wallets you register. You need at least one verified wallet before you can request tokens.
+
+## Register a wallet
+
+<Steps>
+  <Step title="Open Wallets">
+    In your **Personal** workspace, select **Wallets** under **Account**.
+  </Step>
+  <Step title="Add the address">
+    Select **Register an address**. Enter the **Wallet address** (starting with `0x`), an optional **Label**, and the **Network** your tokens live on.
+  </Step>
+  <Step title="Prove you own it">
+    Choose how to sign the ownership message:
+    - **Browser wallet**: sign with a browser wallet extension such as MetaMask or Rainbow.
+    - **Signed elsewhere**: copy the message, sign it in your wallet, and paste the signature back.
+  </Step>
+</Steps>
+
+Signing proves you control the address. It's a message, not a transaction: there's no gas fee and nothing moves.
+
+Once verified, the wallet shows **Verified**. Wallets are also screened automatically before use and show **KYT cleared** when they pass.
+
+## Manage wallets
+
+- **Set primary**: choose the wallet that receives tokens by default.
+- **Sign to verify**: finish verifying a wallet you added but didn't sign for.
+
+## Organization wallets
+
+Organizations register **Treasury wallets** on their **Organization** page. The primary treasury wallet receives minted tokens and is the source for redemptions. Organizations can also connect a **Custody vault** instead of a browser wallet.
+
+<Warning>
+  Only Ethereum-style addresses (`0x` followed by 40 characters) are supported. Double-check the address before you sign. Tokens sent to the wrong address can't be recovered by Universal Mint.
+</Warning>

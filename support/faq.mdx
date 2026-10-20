@@ -1,0 +1,80 @@
+---
+title: "Frequently asked questions"
+sidebarTitle: "FAQ"
+description: "Quick answers to common questions about Universal Mint."
+icon: "circle-question"
+---
+
+## Getting started
+
+<AccordionGroup>
+  <Accordion title="What is Universal Mint?">
+    Universal Mint is a platform for asset-backed tokens. Issuers list tokens backed by assets held with a custodian, and verified investors request and redeem them. Every change is approved by the right people and kept on a tamper-evident record. See [How it works](/get-started/how-it-works).
+  </Accordion>
+  <Accordion title="What assets can be tokenized?">
+    Today, commodity tokens backed by metals such as silver, gold, platinum, or copper, and custom tokens backed by other assets such as bitcoin. Funds, bonds, real estate, and other asset classes are planned.
+  </Accordion>
+  <Accordion title="Do I need to verify my identity?">
+    Yes. You need a verified identity before you can file issuance or redemption requests, and organizations need verified business details before they can list tokens or file requests. See [Identity verification](/account/identity-verification).
+  </Accordion>
+  <Accordion title="Can I invest as a company?">
+    Yes. Apply for a standard organization, verify its business details, and file requests from the organization's workspace. See [Create an organization](/issuers/create-an-organization).
+  </Accordion>
+</AccordionGroup>
+
+## Accounts and security
+
+<AccordionGroup>
+  <Accordion title="Why do I need a passkey?">
+    Your passkey is your second factor on every sign-in, and it signs your requests and approvals. Because it never leaves your device, nobody, including Universal Mint, can make a request in your name. See [Passkeys and recovery](/account/passkeys-and-recovery).
+  </Accordion>
+  <Accordion title="Can I use an authenticator app or SMS instead?">
+    No. Universal Mint uses passkeys only: Touch ID, Face ID, Windows Hello, or a hardware security key.
+  </Accordion>
+  <Accordion title="I lost my phone or laptop. How do I get back in?">
+    Use your recovery phrase. On the sign-in page, select **Lost your device? Recover with your recovery phrase**. See [Recover your account](/account/passkeys-and-recovery#recover-your-account).
+  </Accordion>
+  <Accordion title="Can I sign in on more than one device?">
+    Yes. Register a passkey on each device from **Security**. See [Signing keys](/account/signing-keys).
+  </Accordion>
+</AccordionGroup>
+
+## Tokens and requests
+
+<AccordionGroup>
+  <Accordion title="Where are my tokens held?">
+    In your own wallet, onchain, in the token's contract. Universal Mint doesn't hold your tokens for you. Your **Overview** shows your balances across the wallets you've registered.
+  </Accordion>
+  <Accordion title="What backs each token?">
+    The asset held by the token's custodian. For commodity tokens, each bar is tracked by serial number and weight, and the token's public page shows the bars in the vault and the reserve compared with supply.
+  </Accordion>
+  <Accordion title="How long does a request take?">
+    It depends on the token and the issuer. Issuance waits for the asset deposit to be registered and for the issuer's approvals. Redemption waits for your transfers, the custodian's release, the issuer's approvals, and delivery. Each request page shows exactly where it is.
+  </Accordion>
+  <Accordion title="When do I send tokens for a redemption?">
+    After the issuer's account manager confirms the request with you. The request then shows the Token Return Wallet and the Fee Wallet. Send both transfers and enter the transaction hashes on the request. See [Redeem tokens](/investors/redeem-tokens).
+  </Accordion>
+  <Accordion title="Why must I redeem in 100 oz increments?">
+    Some commodities are delivered in standard 100 oz bars, so redemptions clear in whole 100-token increments. The request form shows the increment for each token.
+  </Accordion>
+  <Accordion title="What fees are there?">
+    Each token sets its own fixed fees per request. The token page and the request show them, and the account manager confirms the redemption fee before you pay it. See [Fees, increments, and access](/investors/fees-and-limits).
+  </Accordion>
+  <Accordion title="Can a request be reversed?">
+    No. Once tokens are minted or burned onchain, the change is final. If a mistake is made, it's corrected with a new, approved request, and both stay on the record.
+  </Accordion>
+</AccordionGroup>
+
+## Trust and transparency
+
+<AccordionGroup>
+  <Accordion title="How do I know a token is fully backed?">
+    For commodity tokens, the token's public page on [Listed tokens](https://app.universalmint.io/listed-tokens) compares supply with the reserve held by the custodian and lists the bars in the vault. For every token, issuers publish attestations and other notices as [disclosures](https://app.universalmint.io/transparency).
+  </Accordion>
+  <Accordion title="Can Universal Mint change my records?">
+    The history is append-only: accepted changes are never edited or deleted, and every request is signed by the person who made it. See [How records work](/trust/how-records-work).
+  </Accordion>
+  <Accordion title="What happens if the platform is paused?">
+    New requests are put on hold, and a banner explains the pause. Your balances and records aren't affected, and requests open again once it's resumed.
+  </Accordion>
+</AccordionGroup>

@@ -1,0 +1,67 @@
+---
+title: "Request tokens"
+description: "File an issuance request to have new tokens minted to your wallet."
+icon: "coins"
+---
+
+An issuance request asks the issuer to mint new tokens to your wallet, backed by an asset held with the token's custodian. Commodity tokens call this **Issue**; custom tokens call it **Mint**.
+
+<Info>
+  Before you start, make sure your [identity is verified](/account/identity-verification) and you have a [verified wallet](/account/wallets).
+</Info>
+
+## File a request
+
+<Steps>
+  <Step title="Choose the token">
+    Open **Listed tokens** and select **Issue** (or **Mint**) on the token you want. If the button is locked, hover over it to see why. Some tokens only accept requests from specific investors.
+  </Step>
+  <Step title="Accept the token's terms">
+    The first time you request a token, you're asked to accept its terms. Tick the required clauses and select **Accept and continue**.
+  </Step>
+  <Step title="Choose a method">
+    Pick how the underlying asset is put into supply for this token, for example **Manual settlement**, where the asset deposit is confirmed by the issuer.
+  </Step>
+  <Step title="Set the amount">
+    - **Commodity tokens**: you don't enter an amount. It's set when the custodian allocates bars to your request.
+    - **Custom tokens**: enter the amount, send the reserve to the address shown, and paste the transfer hash.
+  </Step>
+  <Step title="Choose your wallet">
+    Select the wallet that will receive the tokens. Your primary wallet is selected by default.
+  </Step>
+  <Step title="Add documents">
+    Attach anything you want on file with the request. If the token requires a signed agreement, enter the DocuSign envelope ID you received. The form checks that it's signed and matches your request.
+  </Step>
+  <Step title="Review and sign">
+    Select **Submit issuance request**. Review the **Request details** and approve the passkey prompt to sign it.
+  </Step>
+</Steps>
+
+## What happens next
+
+<Steps>
+  <Step title="Backing is registered">
+    You arrange the deposit of the underlying asset with the issuer. Once the custodian holds it, the issuer registers the backing, for example the serial number and weight of each bar.
+  </Step>
+  <Step title="The issuer approves the mint">
+    The issuer's approvers review the request. This can take more than one approval.
+  </Step>
+  <Step title="Tokens are minted onchain">
+    The mint is signed and broadcast to the network, and the tokens arrive in your wallet.
+  </Step>
+  <Step title="Done">
+    The request shows **Settled · tokens minted to your wallet**.
+  </Step>
+</Steps>
+
+Follow each step on the request's page. See [Track your requests](/investors/track-requests).
+
+## If the form won't submit
+
+| Message | What to do |
+| --- | --- |
+| **Identity verification is required before filing a request.** | [Verify your identity](/account/identity-verification). |
+| **Identity verification has expired: re-verify before filing.** | Select **Verify again with Persona** on the Identity verification page. |
+| **No registered wallet yet.** | [Register a wallet](/account/wallets). |
+| **Not found on-chain yet** (custom tokens) | Wait for your reserve transfer to confirm, then check again. |
+| **Already used by** another request | Each transfer can back only one request. Use the hash of a new transfer. |

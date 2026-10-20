@@ -1,0 +1,63 @@
+---
+title: "Redeem tokens"
+description: "Return tokens for the underlying asset, including physical delivery of metal."
+icon: "arrow-right-arrow-left"
+---
+
+A redemption returns your tokens to the issuer in exchange for the underlying asset. The tokens are burned, so supply always matches the reserve. Commodity tokens call this **Redeem**; custom tokens call it **Burn**.
+
+## File a redemption
+
+<Steps>
+  <Step title="Choose the token">
+    Open **Listed tokens** and select **Redeem** (or **Burn**) on the token.
+  </Step>
+  <Step title="Accept the token's terms">
+    If you're asked, accept the token's redemption terms.
+  </Step>
+  <Step title="Enter the amount">
+    Enter how many tokens to redeem. Some tokens only accept whole increments, for example multiples of 100 for metal delivered in 100 oz bars. The form tells you the increment.
+  </Step>
+  <Step title="Choose a method">
+    Pick how the underlying is returned, for example **FedEx delivery** to ship physical metal to your primary [delivery address](/account/delivery-addresses), or manual settlement.
+  </Step>
+  <Step title="Choose the wallet">
+    Select the wallet you'll send the tokens from. Transfers from any other wallet won't count toward this request.
+  </Step>
+  <Step title="Review and sign">
+    Select **Create redemption**, review the details, select **Submit redemption request**, and approve the passkey prompt.
+  </Step>
+</Steps>
+
+## Send the tokens and fee
+
+After you submit, the issuer's account manager confirms the request with you and quotes the redemption fee. Then the request shows **Action needed · send tokens and redemption fee**.
+
+<Steps>
+  <Step title="Open the request">
+    Go to **Requests** and open your redemption.
+  </Step>
+  <Step title="Send two separate transfers">
+    From the wallet named on the request, send:
+    - the tokens to the **Token Return Wallet**, and
+    - the fee to the **Fee Wallet**, in the stablecoin shown on the request.
+
+    Use the **Copy** buttons to copy each exact address.
+  </Step>
+  <Step title="Enter the transaction hashes">
+    Paste each transaction hash and select **Submit transaction hashes**. The app checks each one onchain and shows **Transaction found and matched to this request** when it's confirmed.
+  </Step>
+</Steps>
+
+<Warning>
+  Send the tokens and the fee as two separate transactions, from the wallet named on the request, to the exact addresses shown. Transfers sent anywhere else can't be matched to your request.
+</Warning>
+
+## What happens next
+
+1. **Release**: the custodian releases the underlying asset.
+2. **Approval**: the issuer's approvers approve the burn.
+3. **Burn**: the returned tokens are burned onchain.
+4. **Delivery**: for physical delivery, the request shows **Handed to FedEx** with a tracking number, then **In transit** and **Delivered**.
+
+When it's done, the request shows **Settled · tokens burned** and moves to **Completed**.

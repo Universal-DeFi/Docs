@@ -1,0 +1,57 @@
+---
+title: "Track your requests"
+description: "Follow an issuance or redemption request from submission to delivery."
+icon: "list-timeline"
+---
+
+**Requests** shows every mint and burn request filed under your name, and where each one is. Filter by **All**, **Mint**, or **Burn**, and open a request to see its full progress.
+
+## Progress
+
+The **Progress** card on each request lists its steps, who handles each one, and whether it's done, in progress, or still to come.
+
+<Tabs>
+  <Tab title="Issuance">
+    | Step | What's happening |
+    | --- | --- |
+    | **Request** | You submitted the request. |
+    | **Backing** | The deposited asset is registered as backing for your request. |
+    | **Internal approval** | The issuer's approvers review the mint. |
+    | **On-chain settlement** | The tokens are minted to your wallet. |
+  </Tab>
+  <Tab title="Redemption">
+    | Step | What's happening |
+    | --- | --- |
+    | **Request** | You submitted the request. |
+    | **Account Manager confirmation** | The issuer confirms the details with you and quotes the fee. |
+    | **Deposit amount + fee** | You send the tokens and the fee, then enter the transaction hashes. |
+    | **Release** | The custodian releases the underlying asset. |
+    | **Internal approval** | The issuer's approvers review the burn. |
+    | **On-chain settlement** | The returned tokens are burned. |
+    | **Delivery** | The asset is on its way to you. |
+  </Tab>
+</Tabs>
+
+A request that's withdrawn or refused shows **Request was closed**.
+
+## Status messages
+
+The banner at the top of the request tells you what's happening and whether you need to act:
+
+| Banner | Meaning |
+| --- | --- |
+| **Waiting for your Account Manager to confirm your request** | The issuer will contact you to confirm the details. |
+| **Action needed · send tokens and redemption fee** | Send your transfers and enter the hashes. See [Redeem tokens](/investors/redeem-tokens). |
+| **Operator is registering the backing for your issuance** | The custodian has the asset and the issuer is recording it. |
+| **Custodian is releasing** the asset | The underlying asset is being released from the vault. |
+| **Your request is in internal approval** | The issuer's approvers are reviewing it. |
+| **Delivering** | The asset is on its way. The request completes when delivery is confirmed. |
+| **Settled** | The request is finished. |
+
+## History
+
+Every action you take on a request is also recorded in your **Activity**, with who signed it and its outcome.
+
+## Notifications
+
+You get a notification when a request moves to a new stage or needs something from you. See [Security, activity, and notifications](/account/settings-and-notifications).
