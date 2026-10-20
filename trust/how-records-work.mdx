@@ -1,0 +1,36 @@
+---
+title: "How records work"
+description: "How Universal Mint records every decision so it can be checked later."
+icon: "fingerprint"
+---
+
+Universal Mint is built so that any change to a token can be explained later: who decided it, whether they signed it, when it took effect, and that it happened exactly once.
+
+## Every request is signed by you
+
+When you submit a request, approve a proposal, or change a setting, you sign it on your own device with your passkey or wallet. Your sign-in session lets you view information, but it can't make changes on its own. The platform can't create a request in your name.
+
+## Approvals are part of the record
+
+If an action needs more than one approval, each approval is its own signed decision. The record shows who approved, when, and which approval group they approved for.
+
+## Each change happens exactly once
+
+Every accepted change takes one fixed position in a single, ordered history. If the same request is submitted twice, for example after a dropped connection, the platform returns the original result instead of acting again.
+
+## Nothing is edited after the fact
+
+The history is append-only. Accepted changes are never edited or deleted. A correction is a new, signed decision that refers to the one it corrects, so both stay visible.
+
+## What you can check
+
+| Where | What you see |
+| --- | --- |
+| **Your request page** | Each step of your request, who handles it, and where it stands. |
+| **Activity** and **Audit log** | Every action you or your organization took, who signed it, the outcome, and its integrity hash. You can export it as CSV. |
+| **[Listed tokens](https://app.universalmint.io/listed-tokens)** | Each token's contract, supply, and mint and burn history, plus the reserve and bars for commodity tokens. No sign-in needed. |
+| **[Disclosures](https://app.universalmint.io/transparency)** | Attestations, asset lifecycle events, incidents, and policy changes published by issuers. |
+
+## For auditors
+
+The full history is kept, so every balance, approval, and permission can be traced back to the signed decisions behind it. If you're auditing an issuer on Universal Mint, contact [support@universalmint.io](mailto:support@universalmint.io).

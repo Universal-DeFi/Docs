@@ -1,0 +1,37 @@
+---
+title: "Manage your tokens"
+description: "Monitor reserves, change request settings, and suspend or delist a token."
+icon: "coins"
+---
+
+**Tokens** lists your organization's tokens. Open one to manage it.
+
+## Token tabs
+
+| Tab | What it shows |
+| --- | --- |
+| **Overview** | Supply, asset, custodian, contract, and status. |
+| **Reserve** | The reserve backing the token, including bars held for commodity tokens, and its attestations. |
+| **Request settings** | Fees, increments, settlement methods, and who can file requests. |
+| **Requests** | Every issuance and redemption request on the token. |
+| **On-chain** | Contract details and onchain activity. |
+
+## Keep the reserve current
+
+For commodity tokens, the token page compares onchain supply with the reserve the custodian holds. Upload fresh reserve attestations regularly; the platform treats attestations older than 90 days as stale.
+
+## Suspend, resume, or delist
+
+- **Suspend** stops new issuance and redemption requests on the token. Holdings are untouched.
+- **Resume** opens the token for requests again.
+- **Delist** permanently removes the token from the platform. A delisted token can't be resumed.
+
+Depending on your policies, these actions may need approval from an approval group.
+
+<Warning>
+  Delisting is permanent. If you only need to pause activity, suspend the token instead.
+</Warning>
+
+## Public page
+
+Every listed token has a public page on [Listed tokens](https://app.universalmint.io/listed-tokens) showing its contract, supply, reserve, documents, terms, and mint and burn history. Investors and the public can see it without signing in.

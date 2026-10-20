@@ -1,0 +1,65 @@
+---
+title: "Approval groups"
+description: "Decide who in your organization approves each action, and how many approvals it needs."
+icon: "users"
+---
+
+An approval group is a set of people, or other approval groups, who approve an action together. Each group has a threshold, such as **2 of 3 required**, so important actions never rest on one person unless you choose that.
+
+## The governance group
+
+Every organization has a **Governance** approval group. It's the default approval group for organization policies unless they're assigned elsewhere, such as adding members or changing approval groups.
+
+## Create an approval group
+
+<Steps>
+  <Step title="Open Approval groups">
+    Open **Organization** and select the **Approval groups** tab.
+  </Step>
+  <Step title="Name it">
+    Select **Create an approval group** and enter a **Name** and a **Slug**. Other organizations address it as `your-org/group-slug`.
+  </Step>
+  <Step title="Add participants">
+    Add members or other approval groups, and mark each one **Required** or **Optional**.
+  </Step>
+  <Step title="Set the threshold">
+    Choose **Approvals required**:
+    - **1 of M**: any one approval passes it.
+    - **M of M**: every member must approve.
+    - **N of M**: the number you set, for example 2 of 3.
+  </Step>
+  <Step title="Create it">
+    Select **Create**. If changes to approval groups need approval, this opens a proposal for your governance group.
+  </Step>
+</Steps>
+
+To change a group later, select **Edit**, review the changes, and save. Removing a group cancels any proposals it has open.
+
+## Vote on a proposal
+
+When an action needs your group's approval, it appears in **Approvals** in your organization workspace and in the Approvals bell in the header.
+
+1. Open **Approvals** and select **Vote** on the item.
+2. Review the details. They were fixed when the proposal opened, so you're approving exactly what was proposed.
+3. Select **Approve** or **Reject**, and approve the passkey prompt.
+
+Each item shows progress such as **1 of 2 approved**. When the threshold is met, the change runs right away and the item moves to **Closed**.
+
+<Note>
+  A rejection doesn't block a change if enough other members approve it. Items that don't reach their threshold expire.
+</Note>
+
+## What the confirmation dialog tells you
+
+When you submit an action, the dialog says who signs it before you confirm:
+
+- **Runs now, signed by** you: you can carry out this action directly.
+- **Opens a proposal at** a group: the action waits until the group approves it.
+
+## Assign approval groups to actions
+
+Which group decides each action is set on the **Policies** tab. See [Delegation and policies](/issuers/delegation).
+
+<Tip>
+  A common setup: a **Governance** group of directors for membership and policy changes, a **Treasury** group with a 2 of 3 threshold for mints and burns, and a single compliance officer for disclosures.
+</Tip>

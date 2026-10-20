@@ -1,0 +1,77 @@
+---
+title: "Troubleshooting"
+description: "Fixes for common problems with sign-in, verification, wallets, and requests."
+icon: "wrench"
+---
+
+## Sign-in
+
+<AccordionGroup>
+  <Accordion title="The passkey prompt doesn't appear">
+    Select **Use passkey** to open it again. Make sure you're using a browser and device that support passkeys, that pop-ups aren't blocked, and that your security key is plugged in if you use one. If you're on a different device from the one you registered, sign in there or [recover your account](/account/passkeys-and-recovery#recover-your-account).
+  </Accordion>
+  <Accordion title="My confirmation or reset code didn't arrive">
+    Codes can take a minute. Check your spam folder, then select **Resend code**. Codes expire after 10 minutes, so use the most recent one.
+  </Accordion>
+  <Accordion title="&quot;That email is already registered with a different sign-in method&quot;">
+    You created the account with a different method. Sign in with Google, Microsoft, or your password, whichever you used first.
+  </Accordion>
+  <Accordion title="&quot;Those words don't match your recovery phrase&quot;">
+    Check the word numbers carefully; you're asked for specific positions, not the first three words. Make sure there are no typos or extra spaces.
+  </Accordion>
+</AccordionGroup>
+
+## Identity verification
+
+<AccordionGroup>
+  <Accordion title="My verification is taking a long time">
+    The page updates by itself once Persona decides. If it's been more than a business day, contact [support](/support/contact).
+  </Accordion>
+  <Accordion title="Persona declined my verification">
+    Select **Start a new verification**. Use a valid, unexpired photo ID, take photos in good light without glare, and make sure the selfie clearly shows your face.
+  </Accordion>
+  <Accordion title="My verification expired">
+    Verification is valid for a set period. Select **Verify again with Persona** to renew it before filing new requests.
+  </Accordion>
+</AccordionGroup>
+
+## Wallets
+
+<AccordionGroup>
+  <Accordion title="My wallet won't verify">
+    Make sure the wallet you sign with controls the exact address you entered and is on the right network. If your browser wallet doesn't open, use **Signed elsewhere**: copy the message, sign it in your wallet app, and paste the signature back.
+  </Accordion>
+  <Accordion title="&quot;Enter a valid EVM address&quot;">
+    Addresses must start with `0x` followed by 40 characters (0–9 and a–f). Copy the address straight from your wallet to avoid typos.
+  </Accordion>
+</AccordionGroup>
+
+## Requests
+
+<AccordionGroup>
+  <Accordion title="The Issue or Redeem button is locked">
+    Hover over the button to see why. Common reasons: your identity isn't verified yet, the token only accepts requests from specific investors, or the token or platform is paused.
+  </Accordion>
+  <Accordion title="&quot;Amount must be a whole multiple of …&quot;">
+    The token only accepts amounts in fixed increments. Use the suggested amount, or the nearest multiple below it.
+  </Accordion>
+  <Accordion title="My transaction hash shows &quot;Not found on-chain yet&quot;">
+    The transfer hasn't confirmed yet. Wait a few minutes and try again. Check that you sent it on the right network.
+  </Accordion>
+  <Accordion title="My transaction hash shows &quot;Already used&quot;">
+    Each transfer can only count toward one request. Check that you pasted the right hash.
+  </Accordion>
+  <Accordion title="I sent the tokens and fee in one transaction">
+    The tokens and the fee must be two separate transfers to two different addresses. Contact [support](/support/contact) with your request reference and the transaction hash.
+  </Accordion>
+  <Accordion title="I sent tokens from the wrong wallet">
+    Transfers only count when they come from the wallet named on the request. Contact [support](/support/contact) with your request reference and the transaction hash.
+  </Accordion>
+  <Accordion title="&quot;New issuance and redemption are paused&quot;">
+    The platform, the issuer, or the token is temporarily suspended. Your balances aren't affected. Try again once the banner is gone.
+  </Accordion>
+</AccordionGroup>
+
+## Still stuck?
+
+Email [support@universalmint.io](mailto:support@universalmint.io) with your account email, the request reference, and a screenshot of the error. See [Contact support](/support/contact).

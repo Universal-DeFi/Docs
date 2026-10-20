@@ -1,53 +1,122 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Universal Mint Help Center",
+  "description": "Guides for investors and issuers using Universal Mint.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#B31942",
+    "light": "#E25C80",
+    "dark": "#83102E"
   },
-  "favicon": "/favicon.svg",
+  "fonts": {
+    "family": "DM Sans"
+  },
+  "favicon": "/favicon.png",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg",
+    "href": "https://universalmint.io"
+  },
   "navigation": {
-    "pages": [
+    "tabs": [
       {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
+        "tab": "Help center",
+        "groups": [
+          {
+            "group": "Get started",
+            "pages": [
+              "index",
+              "get-started/how-it-works",
+              "get-started/create-an-account",
+              "get-started/sign-in"
+            ]
+          },
+          {
+            "group": "Account and security",
+            "pages": [
+              "account/passkeys-and-recovery",
+              "account/signing-keys",
+              "account/identity-verification",
+              "account/wallets",
+              "account/delivery-addresses",
+              "account/settings-and-notifications"
+            ]
+          },
+          {
+            "group": "Investors",
+            "pages": [
+              "investors/getting-started",
+              "investors/request-tokens",
+              "investors/redeem-tokens",
+              "investors/track-requests",
+              "investors/fees-and-limits"
+            ]
+          },
+          {
+            "group": "Issuers",
+            "pages": [
+              "issuers/create-an-organization",
+              "issuers/team-and-invitations",
+              "issuers/approval-groups",
+              "issuers/delegation",
+              "issuers/custodians",
+              "issuers/list-a-token",
+              "issuers/manage-tokens",
+              "issuers/investor-requests",
+              "issuers/disclosures",
+              "issuers/audit-log"
+            ]
+          },
+          {
+            "group": "Trust and transparency",
+            "pages": [
+              "trust/how-records-work",
+              "trust/public-pages"
+            ]
+          },
+          {
+            "group": "Support",
+            "pages": [
+              "support/faq",
+              "support/troubleshooting",
+              "support/glossary",
+              "support/contact"
+            ]
+          }
         ]
       }
     ],
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Universal Mint app",
+          "href": "https://app.universalmint.io",
+          "icon": "arrow-up-right-from-square"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Listed tokens",
+          "href": "https://app.universalmint.io/listed-tokens",
+          "icon": "coins"
+        },
+        {
+          "anchor": "Website",
+          "href": "https://universalmint.io",
+          "icon": "globe"
         }
       ]
     }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:support@mintlify.com"
+        "href": "mailto:support@universalmint.io"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Open app",
+      "href": "https://app.universalmint.io"
     }
   },
   "contextual": {
@@ -55,18 +124,41 @@
       "copy",
       "view",
       "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "claude"
     ]
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    "links": [
+      {
+        "header": "Universal Mint",
+        "items": [
+          {
+            "label": "Website",
+            "href": "https://universalmint.io"
+          },
+          {
+            "label": "Open app",
+            "href": "https://app.universalmint.io"
+          },
+          {
+            "label": "Admin console",
+            "href": "https://admin.universalmint.io"
+          }
+        ]
+      },
+      {
+        "header": "Help",
+        "items": [
+          {
+            "label": "Contact support",
+            "href": "mailto:support@universalmint.io"
+          },
+          {
+            "label": "Disclosures",
+            "href": "https://app.universalmint.io/transparency"
+          }
+        ]
+      }
+    ]
   }
 }

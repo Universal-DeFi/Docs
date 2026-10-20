@@ -1,0 +1,61 @@
+---
+title: "Investor requests"
+description: "Review and advance the issuance and redemption requests investors file against your tokens."
+icon: "inbox"
+---
+
+**Investor requests** lists the mint and burn requests investors filed against your tokens. Open one to review it and advance the workflow.
+
+Each step belongs to a role you assigned when you [listed the token](/issuers/list-a-token). If a step belongs to someone else, the request is read-only for you until it reaches your step.
+
+## Issuance requests
+
+<Steps>
+  <Step title="Register the deposit (operator)">
+    When the custodian has received the asset, upload the **Deposit confirmation** and enter each bar's serial number and weight, or upload a CSV or PDF bar list. Select **Confirm deposit**.
+  </Step>
+  <Step title="Approve the mint (mint approver)">
+    Review the request and the checks, then approve. If the mint approver is an approval group, each member co-approves until the threshold is met.
+  </Step>
+  <Step title="Mint onchain">
+    Once approved, the mint is signed through your signing provider and broadcast. The request shows **Minted on-chain** with the transaction.
+  </Step>
+</Steps>
+
+## Redemption requests
+
+<Steps>
+  <Step title="Confirm with the investor (account manager)">
+    Confirm the investor's identity, the amount, the delivery method, and the destination, and quote the fee. Attach the call recording and select **Confirm**.
+  </Step>
+  <Step title="Wait for the investor's transfers">
+    The investor sends the tokens to the Token Return Wallet and the fee to the Fee Wallet, and enters the transaction hashes. The request checks both onchain.
+  </Step>
+  <Step title="Record the release (operator)">
+    Record the custodian's release with its evidence. For physical delivery, enter the FedEx tracking number.
+  </Step>
+  <Step title="Approve the burn (burn approver)">
+    Review and approve the burn.
+  </Step>
+  <Step title="Burn onchain">
+    The returned tokens are burned. The request shows **Burned & settled on-chain**.
+  </Step>
+  <Step title="Confirm delivery (operator)">
+    Upload proof of delivery to complete the request.
+  </Step>
+</Steps>
+
+## Checks before signing
+
+Before a mint or burn can be signed, the request shows a set of checks:
+
+- **Verification**: the investor's identity is current.
+- **Address screening (KYT)**: the destination wallet passed screening.
+- **Destination not on denylist**
+- **Token transfer** and **Fee payment**: the investor's transfers were found onchain, for redemptions.
+
+If a check hasn't passed, the request shows **This request cannot be signed** until it does.
+
+## Investors
+
+**Investors** lists the people and organizations that have filed requests on your tokens, with their identity status and wallets.

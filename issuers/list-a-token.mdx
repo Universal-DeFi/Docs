@@ -1,0 +1,58 @@
+---
+title: "List a token"
+description: "Submit a listing request for a new asset-backed token."
+icon: "plus"
+---
+
+A listing request describes your token, its backing, and how requests work. The platform reviews it, and approving it makes the token live.
+
+## Before you start
+
+- Your organization is an **issuer** with verified business details (KYB), and your own identity is verified (KYC).
+- The token's contract is already deployed on a supported network.
+- You've added the [custodian and credentials](/issuers/custodians) the token will use.
+- You have the token's public documents, such as a whitepaper and terms.
+
+## Create the listing
+
+Open **Tokens** and select **Add token**. The wizard saves your draft on this device as you go.
+
+<Steps>
+  <Step title="Token type">
+    Choose the asset type: **Commodity** for gold, silver, platinum, or copper, or **Custom token** for other assets.
+  </Step>
+  <Step title="Token details">
+    Enter the asset details, choose the **Network**, and enter the **Contract address**. The token's symbol, name, and decimals are read from the contract. Upload public documents; they become public once the token is listed.
+  </Step>
+  <Step title="Reserve">
+    Select the custodians that hold the asset. All selected custodians must hold the same asset.
+  </Step>
+  <Step title="Mint and burn">
+    Choose the signing provider, credential, vault, and asset that sign mints and burns. One pair can cover both, or burns can use a different vault.
+  </Step>
+  <Step title="Requests">
+    Choose settlement methods and who can submit requests: any verified investor, or only specific investors.
+  </Step>
+  <Step title="Roles">
+    Assign the account manager, operator, mint approver, and burn approver. See [Token roles](/issuers/delegation#token-roles).
+  </Step>
+  <Step title="Fees">
+    Set fixed issuance and redemption fees, the request increment, and the **Token Return Wallet** and fee wallet.
+  </Step>
+  <Step title="Terms">
+    Write the terms investors must accept before submitting a request, and optionally require a signed DocuSign agreement for issuance or redemption.
+  </Step>
+  <Step title="Review and submit">
+    Check every setting and select **Submit the request**.
+  </Step>
+</Steps>
+
+## After you submit
+
+The listing appears under **Listing requests** as **In review**. The platform checks the configuration and either lists the token or rejects it with a reason. You'll get a notification either way.
+
+Once listed, the token appears on [Listed tokens](https://app.universalmint.io/listed-tokens) and investors can start filing requests.
+
+<Note>
+  Private documents you add are visible only to your organization and platform reviewers. Public documents are visible to everyone once the token is listed.
+</Note>

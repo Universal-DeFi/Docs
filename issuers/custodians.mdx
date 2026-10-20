@@ -1,0 +1,46 @@
+---
+title: "Custodians and credentials"
+description: "Add the custodians that hold your reserve, and connect the providers that sign mints, burns, and agreements."
+icon: "vault"
+---
+
+Before you list a token, set up the custodian that holds its backing and the credentials the platform uses to sign onchain and verify agreements.
+
+## Custodians
+
+**Custodians** lets you manage custodians and the asset classes they support.
+
+<Steps>
+  <Step title="Add a custodian">
+    Open **Custodians** in your organization workspace and select **Add custodian**.
+  </Step>
+  <Step title="Name it">
+    Enter a **Name**. A **Slug** is generated from it, and you can edit it. Add a **Region** if you like.
+  </Step>
+  <Step title="Set its capabilities">
+    Select **Add asset** for each asset the custodian holds, for example silver, and pick the settlement methods it supports.
+  </Step>
+</Steps>
+
+Custodians confirm the reserve through attestations: signed reserve statements and bar lists that you upload to the token. The platform treats attestations older than 90 days as stale, so upload a fresh one regularly.
+
+## Credentials
+
+**Credentials** connects the providers your tokens use. Select **Add credential** and pick a provider.
+
+<AccordionGroup>
+  <Accordion title="Signing provider: Fireblocks" icon="signature">
+    Connect your Fireblocks workspace for mint and burn signing. Choose your workspace's region, enter the **API key**, and upload the matching private key file. Once a mint or burn passes approval, the platform signs and broadcasts it through this connection.
+  </Accordion>
+  <Accordion title="Agreement provider: DocuSign" icon="file-signature">
+    Verify signed agreements through DocuSign. Register one DocuSign credential; issuance and redemption requests that require an agreement are checked against this account.
+  </Accordion>
+</AccordionGroup>
+
+Secrets you enter are encrypted in your browser before they're sent.
+
+To remove a credential, select **Revoke**. A token that still signs or verifies with a credential must be moved to another one first.
+
+<Warning>
+  Only add credentials scoped to the vaults and accounts your tokens need. Rotate them in Fireblocks or DocuSign if you think they've been exposed, then revoke the old credential here.
+</Warning>

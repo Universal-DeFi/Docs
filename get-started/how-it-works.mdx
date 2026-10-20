@@ -1,0 +1,59 @@
+---
+title: "How Universal Mint works"
+sidebarTitle: "How it works"
+description: "The roles on the platform, the life of a token, and how decisions get approved."
+icon: "diagram-project"
+---
+
+## Who uses Universal Mint
+
+| Role | What they do |
+| --- | --- |
+| **Investors** | People or organizations that verify their identity, register a wallet, and request or redeem tokens. |
+| **Issuers** | Organizations approved to list tokens. They name the custodian that holds the backing, set fees and rules, and review investor requests. |
+| **Custodians** | The parties that hold the assets backing each token and confirm the reserve. |
+| **Platform operator** | The Universal Mint team that reviews organizations and listings, manages compliance, and can pause activity in an emergency. |
+
+## What can be tokenized
+
+Universal Mint is built for tokens backed by real-world assets. Today it supports two kinds:
+
+- **Commodity tokens** backed by gold, silver, platinum, or copper, measured in troy ounces. Each token is backed by individually tracked bars held by a custodian.
+- **Custom tokens** backed by another asset, such as bitcoin, where each reserve transfer is filed as evidence with the request.
+
+Funds, bonds, real estate, and other asset classes are planned.
+
+## The life of a token
+
+<Steps>
+  <Step title="An organization is approved">
+    A company requests an organization on Universal Mint and completes business verification. The platform reviews and approves it as an issuer.
+  </Step>
+  <Step title="The issuer lists a token">
+    The issuer submits a listing request describing the token, its contract, its custodian, fees, and terms. The platform reviews the listing; approving it makes the token live.
+  </Step>
+  <Step title="Investors request tokens">
+    A verified investor opens an issuance request. The backing is registered, the issuer's approvers sign off, and the tokens are minted to the investor's wallet.
+  </Step>
+  <Step title="Investors redeem tokens">
+    An investor opens a redemption request and sends the tokens back. The custodian releases the underlying asset, the tokens are burned, and the asset is delivered.
+  </Step>
+  <Step title="The record stays public">
+    Each token has a public page showing its supply and mint and burn history, commodity tokens also show their reserve, and issuers publish disclosures as things change.
+  </Step>
+</Steps>
+
+## How decisions are approved
+
+Nothing important on Universal Mint happens on one person's say-so unless an organization chooses that.
+
+- **You sign your own requests.** Every request is signed on your device with your passkey or wallet.
+- **Organizations decide who approves what.** An issuer can require, for example, two of three treasury officers to approve every mint. See [Approval groups](/issuers/approval-groups).
+- **Approvals are recorded.** Each approval is a signed decision kept in the same history as the request it approves.
+
+Learn more in [How records work](/trust/how-records-work).
+
+## Two consoles
+
+- The **Universal Mint app** at [app.universalmint.io](https://app.universalmint.io) is for investors and issuers. If you belong to an organization, you switch between your personal workspace and your organization from the same app.
+- The **admin console** at [admin.universalmint.io](https://admin.universalmint.io) is for the platform operator team.
