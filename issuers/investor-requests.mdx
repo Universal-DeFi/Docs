@@ -22,14 +22,23 @@ Each step belongs to a role you assigned when you [listed the token](/issuers/li
   </Step>
 </Steps>
 
+For ASLV, the evidence is reviewed in two stages before the mint can be approved:
+
+1. Transfer evidence: evidence of the silver's transfer into the reserve is uploaded, reviewed, and approved.
+2. Deposit evidence: the deposit confirmation, the updated holdings, and the bar serialization file are uploaded, reviewed, and approved.
+
+Mint approval follows approval of both evidence stages.
+
 ## Redemption requests
+
+BMAX return sales follow a separate arrangement with approved counterparties. The steps below describe redemption for tokens that provide holder redemption rights.
 
 <Steps>
   <Step title="Confirm with the investor (account manager)">
     Confirm the investor's identity, the amount, the delivery method, and the destination, and quote the fee. Attach the call recording and select **Confirm**.
   </Step>
   <Step title="Wait for the investor's transfers">
-    The investor sends the tokens to the Token Return Wallet and the fee to the Fee Wallet, and enters the transaction hashes. The request checks both onchain.
+    The investor sends the tokens to the Token Return Wallet and, if a fee is charged, sends it separately to the Fee Wallet. They enter the hash for each transfer, which the request checks onchain.
   </Step>
   <Step title="Record the release (operator)">
     Record the custodian's release with its evidence. For physical delivery, enter the FedEx tracking number.
