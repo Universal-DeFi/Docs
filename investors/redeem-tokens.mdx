@@ -4,7 +4,11 @@ description: "Return tokens for the underlying asset, including physical deliver
 icon: "arrow-right-arrow-left"
 ---
 
-A redemption returns your tokens to the issuer in exchange for the underlying asset. The tokens are burned, so supply always matches the reserve. Commodity tokens call this **Redeem**; custom tokens call it **Burn**.
+A redemption returns your tokens to the issuer in exchange for the underlying asset, when the token's terms give holders that right. The returned tokens are burned, reducing the circulating supply. Commodity tokens call this **Redeem**; custom tokens call it **Burn**. For custom tokens, check the token's terms for the rights and conditions associated with **Burn**.
+
+<Note>
+  BMAX return sales are limited to separate arrangements with approved counterparties. This arrangement is distinct from a general holder redemption right; the steps below apply to tokens with holder redemption rights.
+</Note>
 
 ## File a redemption
 
@@ -16,10 +20,10 @@ A redemption returns your tokens to the issuer in exchange for the underlying as
     If you're asked, accept the token's redemption terms.
   </Step>
   <Step title="Enter the amount">
-    Enter how many tokens to redeem. Some tokens only accept whole increments, for example multiples of 100 for metal delivered in 100 oz bars. The form tells you the increment.
+    Enter how many tokens to redeem. Some tokens only accept whole increments, for example multiples of 100 for ASLV, which is delivered in 100 oz bars. The form tells you the increment.
   </Step>
   <Step title="Choose a method">
-    Pick how the underlying is returned, for example **FedEx delivery** to ship physical metal to your primary [delivery address](/account/delivery-addresses), or manual settlement.
+    Pick from the methods the token offers. ASLV uses **FedEx delivery** to your primary [delivery address](/account/delivery-addresses) in the contiguous United States (excluding Alaska and Hawaii), with the recipient's signature required on delivery.
   </Step>
   <Step title="Choose the wallet">
     Select the wallet you'll send the tokens from. Transfers from any other wallet won't count toward this request.
@@ -29,28 +33,32 @@ A redemption returns your tokens to the issuer in exchange for the underlying as
   </Step>
 </Steps>
 
+<Note>
+  If an ASLV shipment is returned or lost, the token's current redemption terms apply. Contact [support](/support/contact) with your request reference.
+</Note>
+
 ## Send the tokens and fee
 
-After you submit, the issuer's account manager confirms the request with you and quotes the redemption fee. Then the request shows **Action needed · send tokens and redemption fee**.
+After you submit, the issuer's account manager confirms the request with you and quotes the redemption fee. Check the confirmed fee on the request before sending funds.
 
 <Steps>
   <Step title="Open the request">
     Go to **Requests** and open your redemption.
   </Step>
-  <Step title="Send two separate transfers">
+  <Step title="Send the tokens and any fee">
     From the wallet named on the request, send:
     - the tokens to the **Token Return Wallet**, and
-    - the fee to the **Fee Wallet**, in the stablecoin shown on the request.
+    - any fee to the **Fee Wallet**, in the stablecoin shown on the request.
 
-    Use the **Copy** buttons to copy each exact address.
+    If the confirmed fee is 0, send only the tokens. Otherwise, send the tokens and fee as separate transfers, even if both addresses are the same. Use the **Copy** buttons to copy each address.
   </Step>
   <Step title="Enter the transaction hashes">
-    Paste each transaction hash and select **Submit transaction hashes**. The app checks each one onchain and shows **Transaction found and matched to this request** when it's confirmed.
+    Enter the token transfer hash and, if you paid a fee, the fee transfer hash. Select **Submit transaction hashes**. The app checks each one onchain and shows **Transaction found and matched to this request** when it's confirmed.
   </Step>
 </Steps>
 
 <Warning>
-  Send the tokens and the fee as two separate transactions, from the wallet named on the request, to the exact addresses shown. Transfers sent anywhere else can't be matched to your request.
+  Use the wallet named on the request and the exact destination addresses shown. Transfers sent anywhere else can't be matched to your request.
 </Warning>
 
 ## What happens next
